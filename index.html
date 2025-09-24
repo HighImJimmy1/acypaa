@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ACYPAA Chat</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="config.js"></script>
+  <script defer src="chat.js"></script>
+</head>
+<body>
+  <div id="chat-launcher" aria-label="Open ACYPAA Chat" title="ACYPAA Chat">💬</div>
+
+  <div id="chat-container" class="hidden" role="dialog" aria-label="ACYPAA Chatbot">
+    <header>
+      <strong>ACYPAA Helper</strong>
+      <button id="close-btn" aria-label="Close">×</button>
+    </header>
+
+    <div id="messages" aria-live="polite"></div>
+
+    <form id="composer" autocomplete="off">
+      <select id="topic">
+        <option value="">All topics</option>
+        <option value="bidding">Bidding</option>
+        <option value="big_book">Big Book</option>
+        <option value="ypaa">YPAA</option>
+      </select>
+      <input id="input" type="text" placeholder="Ask about AA, Big Book, bidding, YPAA…" />
+      <button id="send" type="submit">Send</button>
+    </form>
+
+    <footer>
+      <small>Responses are informational and grounded in ACYPAA docs when available. When unsure, check with your local Intergroup/committee.</small>
+    </footer>
+  </div>
+</body>
+</html>

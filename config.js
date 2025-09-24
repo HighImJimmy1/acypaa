@@ -2,5 +2,5 @@
 // If your Function is named 'chat' the URL typically looks like:
 // https://<your-func-name>.azurewebsites.net/api/chat
 window.CHAT_CONFIG = {
-  ENDPOINT: "https://REPLACE-WITH-YOUR-FUNCTION-URL/api/chat"
+  ENDPOINT: "https://happy-ground-00b5ed91e.1.azurestaticapps.net"
 };
